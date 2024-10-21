@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Curriculum de Ricardo Terán</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cv-container">
+      <!-- Mover el toggle aquí dentro -->
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-switch" />
+          <span class="slider"></span>
+        </label>
+        <span class="material-symbols-outlined"> dark_mode </span>
+      </div>
+
+      <header class="cv-header">
+        <h1>RICARDO TERÁN</h1>
+        <h2>Desarrollador de Software</h2>
+      </header>
+
+      <section class="about">
+        <h3>Acerca de mí</h3>
+        <p>
+          Soy un desarrollador de software apasionado por los desafíos y el
+          aprendizaje autodidacta. Me emocionan los nuevos retos y me adapto
+          fácilmente a situaciones cambiantes. Con una sólida base de
+          conocimientos, busco soluciones innovadoras para impulsar el éxito
+          empresarial. Soy colaborativo, comunicativo y disfruto trabajando en
+          equipo. Estoy entusiasmado por contribuir a un entorno estimulante y
+          crecer profesionalmente en el campo del desarrollo de software.
+        </p>
+      </section>
+
+      <section class="contact">
+        <h3>Datos de Contacto</h3>
+        <ul>
+          <li>Celular: +593980344908</li>
+          <li>Correo: rikardo_t@hotmail.es</li>
+          <li>Twitter: @Rikardo816</li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/rikardo816"
+              >linkedin.com/in/rikardo816</a
+            >
+          </li>
+          <li>
+            Github:
+            <a href="https://github.com/Rikardo816">github.com/Rikardo816</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h3>Educación</h3>
+        <p>
+          <strong>Escuela Politécnica Nacional</strong> - Ing. Ciencias de la
+          Computación (Cursando 7mo semestre)
+        </p>
+        <p>
+          <strong>Instituto Técnico Eugenio Espejo</strong> - Graduado en marzo
+          2013
+        </p>
+      </section>
+
+      <section class="experience">
+        <h3>Experiencia</h3>
+        <div class="job">
+          <h4>Frontend Developer - Adimsof</h4>
+          <p>Sep 2022 - Mar 2023</p>
+          <ul>
+            <li>Desarrollo de componentes en Angular.</li>
+            <li>Integración con la API de Google Maps.</li>
+            <li>Mantenimiento, y mejoras de aplicaciones móviles.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h4>Pasante Administrativo - PC Soluciones</h4>
+          <p>Ene 2015 - Jul 2018</p>
+          <ul>
+            <li>Gestión de Software.</li>
+            <li>Asistencia técnica de computadores.</li>
+            <li>Preparación de informes semanales.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h3>Capacidades y Conocimientos</h3>
+        <ul>
+          <li>
+            Linux, scripting en bash, resolución de problemas en la línea de
+            comandos.
+          </li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Reactjs, Angularjs, Nodejs</li>
+          <li>Lenguajes: Python, Java, PHP, C, C#, C++, Go</li>
+          <li>Bases de Datos: MySQL, PostgreSQL, SQLServer</li>
+          <li>Nivel de inglés: B1</li>
+        </ul>
+      </section>
+    </div>
+
+    <script>
+      const themeSwitch = document.getElementById("theme-switch");
+      const body = document.body;
+      const container = document.querySelector(".cv-container");
+
+      themeSwitch.addEventListener("change", function () {
+        if (this.checked) {
+          body.classList.add("dark-mode");
+          container.classList.add("dark-mode");
+        } else {
+          body.classList.remove("dark-mode");
+          container.classList.remove("dark-mode");
+        }
+      });
+    </script>
+  </body>
+</html>
